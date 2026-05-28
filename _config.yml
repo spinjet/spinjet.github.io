@@ -1,0 +1,89 @@
+# Site Settings
+title: Andrea Spinelli
+subtitle: "Aerospace Engineer · Data Scientist · Clean Aviation"
+name: Andrea Spinelli
+description: >-
+  Aerospace engineer specialising in multidisciplinary design optimisation,
+  hybrid-electric propulsion, and machine learning applications in aviation.
+url: "https://spinjet.github.io"
+baseurl: ""
+repository: spinjet/spinjet.github.io
+
+# Theme
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+minimal_mistakes_skin: "dark"  # Options: air, aqua, contrast, dark, default, dirt, mint, neon, plum, sunrise
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-include-cache
+
+# Pagination (for blog)
+paginate: 5
+paginate_path: /blog/page:num/
+
+# Author
+author:
+  name: Andrea Spinelli
+  avatar: /assets/images/profile.jpg   # Add your photo here
+  bio: "Aerospace engineer with a PhD from Cranfield. I build tools for aircraft design optimisation and write about ML, CFD, and clean aviation."
+  location: "Cranfield, UK"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/spinjet"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/YOUR_LINKEDIN"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:YOUR_EMAIL"
+
+# Navigation
+navigation:
+  main:
+    - title: "About"
+      url: /about/
+    - title: "Projects"
+      url: /projects/
+    - title: "Skills"
+      url: /skills/
+    - title: "Experience"
+      url: /experience/
+    - title: "Blog"
+      url: /blog/
+
+# Defaults
+defaults:
+  # All posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # All pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Feed
+feed:
+  path: feed.xml
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
